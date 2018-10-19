@@ -49,8 +49,7 @@ def iDetect(exType):
             return jsonify({'error': 'Cannot find IP'}), 300
         return "Cannot find IP in our Database"
     except 	sql3.Error as e:
-        errorMessage = """There is error in database {}""".format(e)
-        return errorMessage
+        return  """There is error in database {}""".format(e)
 
 
 ### Routes
