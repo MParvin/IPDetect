@@ -35,7 +35,7 @@ def iDetect(exType):
         # Second query in database for IP's like this
         conn = sql3.connect(ipDB)
         cur = conn.cursor()
-        cur.execute('''SELECT * FROM ip_list WHERE ip LIKE "%s%"'''.format(firstOcted))
+        cur.execute('''SELECT * FROM iplist WHERE ip LIKE "%s%"'''.format(firstOcted))
         dbRows = cur.fetchall()
 
         for singleRow in dbRows:
